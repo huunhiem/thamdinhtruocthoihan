@@ -1,0 +1,6 @@
+{
+  "name": "Thẩm định nâng bậc lương trước thời hạn CCVC",
+  "description": "Hệ thống thẩm định nâng bậc lương trước thời hạn đối với công chức, viên chức theo Thông tư 08/2013/TT-BNV, Thông tư 03/2021/TT-BNV và Nghị định 204/2004/NĐ-CP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

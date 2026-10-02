@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 10mm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-family: 'Times New Roman', Times, serif !important;
+  }
+
+  /* Ẩn thanh header và các phần tử điều hướng khi in */
+  header, nav, .no-print, button {
+    display: none !important;
+  }
+
+  /* Bỏ nền xám và fixed của modal để in trọn vẹn văn bản */
+  .fixed.inset-0 {
+    position: static !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  .fixed.inset-0 > div {
+    max-width: 100% !important;
+    box-shadow: none !important;
+    border: none !important;
+    max-height: none !important;
+    display: block !important;
+    border-radius: 0 !important;
+  }
+
+  #printable-content {
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    width: 100% !important;
+  }
+}

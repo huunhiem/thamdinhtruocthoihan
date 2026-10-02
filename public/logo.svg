@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="innerBg" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#f0fdf4" />
+      <stop offset="60%" stop-color="#cffafe" />
+      <stop offset="100%" stop-color="#bae6fd" />
+    </radialGradient>
+    
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+
+    <linearGradient id="torchFlame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="50%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#facc15" />
+    </linearGradient>
+
+    <linearGradient id="bookCover" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <!-- Curved Text Paths -->
+    <!-- Top arc for "ỦY BAN NHÂN DÂN XÃ PHÚ HỒ" -->
+    <path id="textPathTop" d="M 90,300 A 210,210 0 1,1 510,300" fill="none" />
+    <!-- Bottom arc for "GIÁO DỤC VÀ ĐÀO TẠO" -->
+    <path id="textPathBottom" d="M 510,300 A 210,210 0 0,1 90,300" fill="none" />
+  </defs>
+
+  <!-- Outer Ring Border -->
+  <circle cx="300" cy="300" r="290" fill="#0284c7" stroke="#0369a1" stroke-width="6" />
+
+  <!-- Inner Circle (Center emblem area) -->
+  <circle cx="300" cy="300" r="215" fill="url(#innerBg)" stroke="#0284c7" stroke-width="5" />
+
+  <!-- Stylized Doves / Leaves on Left of Outer Ring -->
+  <g fill="#ffffff" opacity="0.95">
+    <!-- Left Doves -->
+    <path d="M 75,200 Q 85,195 95,205 Q 85,210 80,215 Q 70,210 75,200 Z" />
+    <path d="M 62,240 Q 72,235 82,245 Q 72,250 67,255 Q 57,250 62,240 Z" />
+    <path d="M 58,285 Q 68,280 78,290 Q 68,295 63,300 Q 53,295 58,285 Z" />
+    <path d="M 64,330 Q 74,325 84,335 Q 74,340 69,345 Q 59,340 64,330 Z" />
+    <path d="M 78,370 Q 88,365 98,375 Q 88,380 83,385 Q 73,380 78,370 Z" />
+
+    <!-- Right Doves -->
+    <path d="M 525,200 Q 515,195 505,205 Q 515,210 520,215 Q 530,210 525,200 Z" />
+    <path d="M 538,240 Q 528,235 518,245 Q 528,250 533,255 Q 543,250 538,240 Z" />
+    <path d="M 542,285 Q 532,280 522,290 Q 532,295 537,300 Q 547,295 542,285 Z" />
+    <path d="M 536,330 Q 526,325 516,335 Q 526,340 531,345 Q 541,340 536,330 Z" />
+    <path d="M 522,370 Q 512,365 502,375 Q 512,380 517,385 Q 527,380 522,370 Z" />
+  </g>
+
+  <!-- Top Text: ỦY BAN NHÂN DÂN XÃ PHÚ HỒ -->
+  <text fill="#ffffff" font-weight="900" font-size="30" font-family="'Inter', 'Arial', sans-serif" letter-spacing="3.5">
+    <textPath href="#textPathTop" startOffset="50%" text-anchor="middle">
+      ỦY BAN NHÂN DÂN XÃ PHÚ HỒ
+    </textPath>
+  </text>
+
+  <!-- Bottom Text: GIÁO DỤC VÀ ĐÀO TẠO -->
+  <text fill="#ffffff" font-weight="900" font-size="34" font-family="'Inter', 'Arial', sans-serif" letter-spacing="4">
+    <textPath href="#textPathBottom" startOffset="50%" text-anchor="middle">
+      GIÁO DỤC VÀ ĐÀO TẠO
+    </textPath>
+  </text>
+
+  <!-- Inner Graphics Area (Inside Radius 215) -->
+  <g id="center-emblem">
+    <!-- Curved Lower Water / Waves / Base Rings -->
+    <path d="M 120,380 Q 300,470 480,380 A 215,215 0 0,1 120,380 Z" fill="#0284c7" />
+    <path d="M 140,410 Q 300,490 460,410 A 215,215 0 0,1 140,410 Z" fill="#0369a1" opacity="0.6" />
+    <path d="M 180,445 Q 300,510 420,445 A 215,215 0 0,1 180,445 Z" fill="#38bdf8" opacity="0.7" />
+
+    <!-- Open Book Under-layer (Golden Orange) -->
+    <path d="M 300,415 L 110,345 Q 210,375 300,415 Q 390,375 490,345 Z" fill="url(#bookCover)" />
+
+    <!-- Open Book White Pages -->
+    <path d="M 300,405 C 230,375 160,340 140,240 C 230,260 280,320 300,405 Z" fill="#ffffff" opacity="0.95" />
+    <path d="M 300,405 C 370,375 440,340 460,240 C 370,260 320,320 300,405 Z" fill="#ffffff" opacity="0.95" />
+
+    <!-- Main Book Spine and Leaf Wings -->
+    <path d="M 300,415 C 220,350 170,320 180,315 C 230,345 270,365 300,415 Z" fill="#2563eb" opacity="0.8" />
+    <path d="M 300,415 C 380,350 430,320 420,315 C 370,345 330,365 300,415 Z" fill="#2563eb" opacity="0.8" />
+
+    <!-- Center Base Pin / Spire -->
+    <circle cx="300" cy="360" r="10" fill="#1e3a8a" />
+    <path d="M 298,360 L 298,405 L 302,405 L 302,360 Z" fill="#1e3a8a" />
+
+    <!-- Two Stylized Human Figures Holding Torch -->
+    <!-- Left Figure (Royal Blue) -->
+    <!-- Head -->
+    <circle cx="265" cy="225" r="19" fill="#1d4ed8" />
+    <!-- Body & Raised Arm -->
+    <path d="M 245,340 C 255,290 285,250 290,190 C 280,240 250,255 240,340 Z" fill="#1d4ed8" />
+    <path d="M 250,245 C 270,250 288,230 292,190 C 285,210 260,240 245,260 Z" fill="#2563eb" />
+
+    <!-- Right Figure (Vibrant Red) -->
+    <!-- Head -->
+    <circle cx="335" cy="240" r="17" fill="#dc2626" />
+    <!-- Body & Raised Arm -->
+    <path d="M 355,340 C 345,300 320,270 306,205 C 320,255 345,265 355,340 Z" fill="#dc2626" />
+    <path d="M 345,260 C 330,265 315,245 308,205 C 315,225 335,250 345,270 Z" fill="#ef4444" />
+
+    <!-- Flaming Torch (Top Center) -->
+    <!-- Outer Flame (Orange-Red) -->
+    <path d="M 295,190 C 275,175 270,140 295,100 C 298,125 305,130 310,120 C 320,135 335,145 325,175 C 315,195 300,195 295,190 Z" fill="url(#torchFlame)" />
+
+    <!-- Inner Flame (Golden Yellow Core) -->
+    <path d="M 296,180 C 285,170 285,150 297,125 C 300,140 305,145 308,138 C 314,150 320,155 315,172 C 310,182 300,183 296,180 Z" fill="#fef08a" />
+  </g>
+</svg>
